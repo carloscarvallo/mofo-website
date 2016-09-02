@@ -17,7 +17,8 @@
   },
   "homepage": "https://github.com/carloscarvallo/mofo-website#readme",
   "dependencies": {
-    "express": "^4.14.0"
+    "express": "^4.14.0",
+    "request": "^2.74.0"
   },
   "devDependencies": {
     "babel-core": "^6.14.0",
