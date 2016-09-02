@@ -18,5 +18,8 @@
   "homepage": "https://github.com/carloscarvallo/mofo-website#readme",
   "dependencies": {
     "express": "^4.14.0"
+  },
+  "devDependencies": {
+    "babel-preset-es2015": "^6.14.0"
   }
 }
