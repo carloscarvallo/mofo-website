@@ -17,7 +17,10 @@
   },
   "homepage": "https://github.com/carloscarvallo/mofo-website#readme",
   "dependencies": {
+    "body-parser": "^1.15.2",
+    "dotenv": "^2.0.0",
     "express": "^4.14.0",
+    "morgan": "^1.7.0",
     "request": "^2.74.0"
   },
   "devDependencies": {
