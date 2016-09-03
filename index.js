@@ -9,6 +9,7 @@ app.use(morgan('dev'))
 app.use(express.static(__dirname + '/public'))
 app.use(bodyParser.urlencoded({ extended: false }))
 app.use(bodyParser.json())
+app.use(bodyParser.json({ type: 'application/vnd.api+json' }))
 
 require('dotenv').config()
 
