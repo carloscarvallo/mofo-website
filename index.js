@@ -13,7 +13,7 @@ require('dotenv').config()
 
 app.get('/', (req, res) => {
   var options = { method: 'GET',
-  url: 'https://api.linkedin.com/v1/people/~:(id,first-name,last-name,positions)',
+  url: 'https://api.linkedin.com/v1/people/~:(id,first-name,last-name,email-address,headline,summary,specialties,positions)',
   qs: { format: 'json' },
   headers:
    { 'cache-control': 'no-cache',
