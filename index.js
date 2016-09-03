@@ -6,6 +6,7 @@ const express = require('express')
 , port = process.env.PORT || 8080
 
 app.use(morgan('dev'))
+app.use(express.static(__dirname + '/public'))
 app.use(bodyParser.urlencoded({ extended: false }))
 app.use(bodyParser.json())
 
