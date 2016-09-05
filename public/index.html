@@ -9,19 +9,11 @@
     <script src="core.js"></script>
   </head>
   <body ng-controller="mainController">
-    <h1>Carlos C. Carvallo</h1>
-    <h2>Consultor Informático / FullStack Developer</h2>
-    <p>Email: carloscarvallo87@gmail.com</p>
+    <h1>{{ profile.firstName }} {{ profile.lastName }}</h1>
+    <h2>{{ profile.headline }}</h2>
+    <p>{{ profile.emailAddress }}</p>
     <h3>Extracto</h3>
-    <p><i>Front-end Dev :</i> HTML5, CSS3, Sass, JavaScript (Client and Server-side)<br>
-      <i>Back-end Coding / Scripting :</i> Node.js, Python, G<br>
-      <i>Javascript Frameworks & Libs :</i> AngularJs, JQuery, React<br>
-      <i>Css Frameworks :</i> Materialize, Bootstrap, Material Desig<br>
-      <i>Linux as Development and Deployment system :</i> Kubuntu KDE5, Ubuntu, Debian, OpenSuse, CentOS<br>
-      <i>Database :</i> Mysql, Mongodb, Postgresql, Sqlit<br>
-      <i>Control version :</i> Git<br>
-      <i>Others :</i> API development<br>
-    </p>
+    <p style="white-space: pre;">{{ profile.summary }}</p>
     <h3>Experiencia</h3>
     <h4>Freelancer Web Developer en Simgia</h4>
     abril de 2016 - Actualidad (5 meses)<br>
