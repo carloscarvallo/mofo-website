@@ -13,7 +13,7 @@ app.use(bodyParser.json({ type: 'application/vnd.api+json' }))
 
 require('dotenv').config()
 
-app.get('/', (req, res) => {
+app.get('/api/profile', (req, res) => {
   var options = { method: 'GET',
   url: 'https://api.linkedin.com/v1/people/~:(id,first-name,last-name,email-address,headline,summary,specialties,positions)',
   qs: { format: 'json' },
@@ -30,4 +30,8 @@ app.get('/', (req, res) => {
 
 app.listen(port, () => {
   console.log('app listening on', port)
+})
+
+app.get('*', (req, res) => {
+  res.sendFile('./public/index.html')
 })
