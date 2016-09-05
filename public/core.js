@@ -5,7 +5,10 @@ function mainController($scope, $http) {
 
   $http.get('/api/profile')
     .success(function(data) {
-      $scope.profile = data;
-      console.log(data);
+      $scope.profile = data
+      console.log(data)
+    })
+    .error(function(data) {
+      console.log('Error: ' + data)
     })
 }
